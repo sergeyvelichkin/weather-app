@@ -46,7 +46,13 @@ class App extends React.Component {
     return (
       <div>
         <div className="inline-block absolute top center mt12 ml12 bg-darken75 color-white z1 py6 px12 round-full txt-s txt-bold">
-          <div>{`Location: ${city},  Temperature: ${temp}°C', Weather : ${weather}   `}</div>
+          <div>Plese click on city where you want to check weather </div>
+          <br/>
+          <div>
+                {`Location: ${city},  
+                 Temperature: ${temp}°C', 
+                 Weather : ${weather}   `}
+           </div>
         </div>
         <div ref={el => this.mapContainer = el} className="absolute top right left bottom" />
       </div>
